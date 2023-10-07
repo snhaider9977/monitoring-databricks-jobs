@@ -120,7 +120,7 @@ Average: {avg_execution_time:.2f} mins
 
 print(report)
 
-# Create visualizations (e.g., bar chart for task status)
+
 plt.figure(figsize=(16, 8))
 plt.subplot(2, 2, 1)
 task_status_counts = sorted_df['result_state'].value_counts()
