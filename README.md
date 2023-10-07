@@ -67,3 +67,41 @@ apiToken: Replace with your API token.</code></pre>
 <p>Run the script. It will fetch and process job runs data, display the sorted results, save them to a CSV file, and print a Markdown table.</p>
 
 <p><strong>Note:</strong> This script provides a basic example of how to fetch and process job runs data from Azure Databricks using the Databricks REST API. You can further enhance and customize the script to suit your specific use case and requirements.</p>
+
+##output
+
+# KPI Report for 2023-10-07:
+
+Total Jobs: 160
+Total Tasks: 214
+Successful Tasks: 174
+Failed Tasks: 15
+Total Execution Time (mins): 1158
+Average Execution Time (mins): 10.82
+Min Execution Time (mins): 0
+Max Execution Time (mins): 1158
+
+**Key Insights:**
+
+1. **Task Status Distribution:**
+```json
+{
+    "SUCCESS": 174,
+    "CANCELED": 24,
+    "FAILED": 15
+}
+```
+2. **Execution Duration Distribution:**
+   - Min: 0 mins
+   - Max: 1158 mins
+   - Average: 10.82 mins
+
+3. **Jobs with Longest Execution Time:**
+   | job_id          | execution_duration_in_mins |
+   |-----------------|-----------------------------|
+   | 260792223809789 | 140                         |
+   | 74519312719017  | 93                          |
+   | 371241484431340 | 88                          |
+   | 655421446142082 | 85                          |
+   | 887636488212750 | 65                          |
+
